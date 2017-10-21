@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+.drum-kit {
+	display: flex;
+}
+
+.key {
+	width: calc(100%/9);
+	margin: 0 1em;
+	padding: 1em 2em;
+	border: 2px solid #ffeb3b;
+	background-color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.key kbd {
+	display: block;
+	margin-bottom: .5em;
+	font-size: 2em;
+}
+
+.key span {
+	font-size: .9em
+}
+
+.key.playing {
+	box-shadow: 0 0 8px #00bcd4;
+	border-color: #00bcd4;
+	transform: scale(1.1);
+}
