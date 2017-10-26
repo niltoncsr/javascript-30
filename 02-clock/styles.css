@@ -1,0 +1,42 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.clock {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	border: 3px solid #666;
+}
+
+.hand {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: rotate(-90deg);
+	transform-origin: 0;
+	transition: all .1s cubic-bezier(0.48, 2.9, 0.35, 0.52);
+}
+
+.hour.hand {
+	width: 180px;
+}
+
+.minute.hand {
+	width: 170px;
+}
+
+.hour.hand,
+.minute.hand {
+	height: 2px;
+	background-color: #333;
+}
+
+.second.hand {
+	width: 160px;
+	height: 1px;
+	background-color: #e51515;
+}
